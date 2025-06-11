@@ -39,7 +39,9 @@ public class HelloApplication extends Application {
                 case DOWN: text.setY(text.getY()+10);break;
                 case RIGHT: text.setX(text.getX()+10);break;
                 case LEFT: text.setX(text.getX()-10);break;
-
+                default: if(Character.isLetterOrDigit(e.getText().charAt(0))){
+                    text.setText(e.getText());
+                }
             }
 
 
