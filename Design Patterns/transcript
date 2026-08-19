@@ -1,0 +1,137 @@
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project Counter_UVM
+# Compile of controller.v was successful.
+# Compile of datapath.v was successful.
+# Compile of fifo.v was successful.
+# Compile of memory.v was successful.
+# Compile of tb.sv was successful with warnings.
+# 5 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb
+# vsim -voptargs="+acc" work.tb 
+# Start time: 18:06:12 on Aug 13,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.fifo(fast)
+# Loading work.datapath(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+run -all
+# ** Note: $finish    : /home/mostafa/D/Engineering Materials/GitHub Repos/Verilog/IEEE_DIC/Assignment3/tb.sv(64)
+#    Time: 5175 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at /home/mostafa/D/Engineering Materials/GitHub Repos/Verilog/IEEE_DIC/Assignment3/tb.sv line 64
+add wave -position insertpoint sim:/tb/*
+add wave -position insertpoint sim:/tb/dut/*
+add wave -position insertpoint sim:/tb/dut/dp/*
+add wave -position insertpoint sim:/tb/dut/ctrlr/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt4
+# Loading work.tb(fast)
+# Loading work.fifo(fast)
+# Loading work.datapath(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+run -all
+# ** Note: $finish    : /home/mostafa/D/Engineering Materials/GitHub Repos/Verilog/IEEE_DIC/Assignment3/tb.sv(64)
+#    Time: 5175 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at /home/mostafa/D/Engineering Materials/GitHub Repos/Verilog/IEEE_DIC/Assignment3/tb.sv line 64
+add wave -position insertpoint sim:/tb/*
+add wave -position insertpoint sim:/tb/dut/*
+add wave -position insertpoint sim:/tb/dut/dp/*
+add wave -position insertpoint sim:/tb/dut/ctrlr/*
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt4
+# Loading work.tb(fast)
+# Loading work.fifo(fast)
+# Loading work.datapath(fast)
+# Loading work.memory(fast)
+# Loading work.controller(fast)
+run -all
+# ** Note: $finish    : /home/mostafa/D/Engineering Materials/GitHub Repos/Verilog/IEEE_DIC/Assignment3/tb.sv(64)
+#    Time: 5175 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at /home/mostafa/D/Engineering Materials/GitHub Repos/Verilog/IEEE_DIC/Assignment3/tb.sv line 64
+# Break key hit
+quit -sim
+# End time: 18:46:17 on Aug 13,2026, Elapsed time: 0:40:05
+# Errors: 0, Warnings: 1
+# Compile of counter.v was successful.
+# Compile of counter_env_pkg.sv was successful.
+# Compile of top.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim top +UVM_TESTNAME=random_tetst +UVM_VERBOSITY=UVM_FULL
+# vsim top "+UVM_TESTNAME=random_tetst" "+UVM_VERBOSITY=UVM_FULL" 
+# Start time: 18:48:01 on Aug 13,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/top.sv(11): (vopt-2685) [TFMPC] - Too few port connections for 'ifc'.  Expected 1, found 0.
+# ** Warning: /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/counter_ifc.sv(7): (vopt-3838) Variable 'count' written by continuous and procedural assignments. 
+# One of the assignments is implicit. See /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/top.sv(12). Variable is procedurally driven by count in clocking block cb. See (/home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/counter_ifc.sv:13).
+# 
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.counter_ifc(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.counter_env_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# ** Error: (vsim-7065) Illegal assignment to class mtiUvm.uvm_pkg::uvm_component from class work.counter_env_pkg::result_item
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_component_registry #(counter_env_pkg::result_item, "result_item") File: /usr/local/bin/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh Line: 67
+# ** Error: (vsim-8754) Actual input arg. of type 'class mtiUvm.uvm_pkg::uvm_component' for formal 'name' of 'new' is not compatible with the formal's type 'string'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_component_registry #(counter_env_pkg::result_item, "result_item") File: /usr/local/bin/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh Line: 66
+# ** Error: (vsim-3046) Too many arguments to 'new'. Expected 1, found 2.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_component_registry #(counter_env_pkg::result_item, "result_item") File: /usr/local/bin/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh Line: 66
+# ** Error: (vsim-7065) Illegal assignment to class mtiUvm.uvm_pkg::uvm_component from class work.counter_env_pkg::random_sequence
+#    Time: 0 ns  Iteration: 0  Region: /counter_env_pkg::random_sequence File: /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/random_sequence.svh Line: 12
+# ** Error: (vsim-8754) Actual input arg. of type 'class work.counter_env_pkg::random_sequence' for formal 'parent' of 'create' is not compatible with the formal's type 'class mtiUvm.uvm_pkg::uvm_component'.
+#    Time: 0 ns  Iteration: 0  Region: /counter_env_pkg::random_sequence File: /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/random_sequence.svh Line: 12
+# Loading /usr/local/bin/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# Error loading design
+# End time: 18:48:03 on Aug 13,2026, Elapsed time: 0:00:02
+# Errors: 5, Warnings: 7
+# Compile of counter.v was successful.
+# Compile of counter_env_pkg.sv was successful.
+# Compile of top.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim top +UVM_TESTNAME=random_tetst +UVM_VERBOSITY=UVM_FULL
+# vsim top "+UVM_TESTNAME=random_tetst" "+UVM_VERBOSITY=UVM_FULL" 
+# Start time: 18:51:30 on Aug 13,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/top.sv(11): (vopt-2685) [TFMPC] - Too few port connections for 'ifc'.  Expected 1, found 0.
+# ** Warning: /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/counter_ifc.sv(7): (vopt-3838) Variable 'count' written by continuous and procedural assignments. 
+# One of the assignments is implicit. See /home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/top.sv(12). Variable is procedurally driven by count in clocking block cb. See (/home/mostafa/D/Engineering Materials/GitHub Repos/SystemVerilog/UVM/3_UpDownCounter_UVM/counter_ifc.sv:13).
+# 
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.counter_ifc(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.counter_env_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# ** Error: (vsim-7065) Illegal assignment to class mtiUvm.uvm_pkg::uvm_component from class work.counter_env_pkg::result_item
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_component_registry #(counter_env_pkg::result_item, "result_item") File: /usr/local/bin/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh Line: 67
+# ** Error: (vsim-8754) Actual input arg. of type 'class mtiUvm.uvm_pkg::uvm_component' for formal 'name' of 'new' is not compatible with the formal's type 'string'.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_component_registry #(counter_env_pkg::result_item, "result_item") File: /usr/local/bin/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh Line: 66
+# ** Error: (vsim-3046) Too many arguments to 'new'. Expected 1, found 2.
+#    Time: 0 ns  Iteration: 0  Region: /uvm_pkg::uvm_component_registry #(counter_env_pkg::result_item, "result_item") File: /usr/local/bin/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_registry.svh Line: 66
+# Loading /usr/local/bin/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# Error loading design
+# End time: 18:51:31 on Aug 13,2026, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 4

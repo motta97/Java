@@ -1,0 +1,10 @@
+public class ModelDuck extends Duck{
+    public ModelDuck(){
+        super.flyBehavior= new FlyNoWay();
+        super.quackBehavior=new Quack();
+    }
+    @Override
+    public void display(){
+        System.out.println("I am a real Model Duck");
+    }
+}

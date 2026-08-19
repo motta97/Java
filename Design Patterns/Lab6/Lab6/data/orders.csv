@@ -1,0 +1,5 @@
+orderId,meal,mealPrice,delivery,deliveryFee,courier,status,total
+TEST-FACADE,Test Burger,10.00,Standard Delivery,15.00,Courier-2,PLACED,25.00
+ORD-1785915564481,Classic Burger + Extra Cheese, ComboSide,120.00,Express Delivery,30.00,Courier-1,PLACED,150.00
+ORD-1785915753868,Margherita Pizza + Extra CheeseComboSide,140.00,Express Delivery,30.00,Courier-1,PLACED,170.00
+ORD-1785916649998,Classic Burger + Extra CheeseComboSide,120.00,Express Delivery,30.00,Courier-1,PLACED,150.00
